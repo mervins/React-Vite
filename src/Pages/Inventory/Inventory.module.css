@@ -1,0 +1,45 @@
+ 
+.cust button{ 
+    font-size: 22px; 
+    color:#975beb;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: 0.1s ease-in-out;
+}
+.cust section{ /* modified the card components*/
+    padding: 0.5rem !important;
+    border-radius: 5px;
+}
+
+.cust button:hover{
+    font-size: 28px; 
+    background-color: white;
+}
+
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.delete h2{
+    color:#975beb;
+    border-bottom: 2px solid #975beb;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.deleteBtn{
+    display: flex;
+    justify-content: center;
+    
+}
+.deleteBtn div{
+    margin-left: 10px;
+}
+

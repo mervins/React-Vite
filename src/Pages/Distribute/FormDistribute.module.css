@@ -1,0 +1,153 @@
+.container{
+    display: flex; 
+}
+
+.container .card1{
+    width: 67%;
+    margin-right: 1rem;
+}
+.container .card1 section{ 
+    margin-bottom: 1rem;
+}
+
+.container .card2{
+    width: 33%;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;     
+}
+.product div{
+    flex-grow: 1;
+}
+
+.btn{
+    display: flex; 
+    flex-direction: row-reverse;
+}
+
+:root {
+    --color__accent: #6200ee;
+    --color__primary:#975beb;
+    --field__background: #f5f5f5;
+    --field__background--hover: #e9e9e9;
+    --input__border: rgba(0, 0, 0, 0.42);
+    --input__border--hover: rgba(0, 0, 0, 0.62);
+    --label__color: #36395A;
+  
+    --font__size: 16px;
+    /* --font__family: Roboto, Arial, sans-serif; */
+    --font__family: "JetBrains Mono",monospace;
+  }
+
+ 
+.input{
+    display: flex; 
+    flex-direction: column-reverse;
+    font-family: var(--font__family); 
+    /* position: absolute */
+}
+
+.input input{ 
+    padding: .8rem 0;
+    border:0;
+    outline: none;
+    width: auto;
+    border-bottom: 2px solid  var( --field__background);
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--font__family);
+}
+
+.input label{
+    position: relative;
+    pointer-events: none;
+    transform: translateY(30px);
+    transition: all 400ms ease-in-out;
+    
+}
+
+.input input:focus{
+    border-bottom: 2px solid  var(--color__primary);   
+    color:  var(--color__accent);
+}
+
+.input input:focus + label{
+    color:  var(--color__accent);
+    transform: translateY(0);
+    font-weight: bold;
+}
+
+.input input:not(:placeholder-shown) + label{
+    color:  var(--color__primary);
+    transform: translateY(0);
+    font-weight: bold;
+  }
+
+  .cust button{ 
+    font-size: 22px; 
+    color:#975beb;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: 0.1s ease-in-out;
+}
+
+.cust section{ /* modified the card components*/
+    padding: 0.5rem !important;
+    border-radius: 5px;
+}
+
+.cust button:hover{
+    font-size: 28px; 
+    background-color: white;
+}
+
+
+.closeIcon{
+    font-size: 60px;
+    color:#975beb;
+    left: 93%;
+    top:-21px;
+    position: fixed;
+    cursor: pointer; 
+    transition: 0.1s ease-in-out;
+}
+
+.closeIcon:hover{
+    font-size: 65px;
+}
+.closeIcon{
+    font-size: 60px;
+    color:#975beb;
+    left: 93%;
+    top:-21px;
+    position: fixed;
+    cursor: pointer; 
+    transition: 0.1s ease-in-out;
+}
+
+.closeIcon:hover{
+    font-size: 65px;
+}
+.h2{
+    text-align: center; 
+    color:#36395A;  
+    margin: 0;
+}
+.line{
+    border-bottom: 2px solid  #a58bc9; 
+    width: 10rem;
+    margin: auto; 
+}
+.btnGrp{
+    display: flex;
+    justify-content: center;
+}
+.btnGrp div{
+    margin-left: 10px;
+}

@@ -1,0 +1,26 @@
+.item{
+    display: flex; 
+    border-bottom: 1px solid #ccc; 
+    align-items: center;
+    padding-left: 1rem; 
+    padding-right: 1rem;   
+}
+.item div{
+    flex-grow: 1; 
+    justify-content: space-around; 
+    width: 25%;
+}
+.item h5{
+    font-weight:normal;
+}
+.item:hover{
+        background-color: #e8e9f3;
+}
+@media (max-width: 768px) {
+    .item{
+        display: flex;
+        margin: 1rem; 
+        border-bottom: 1px solid #ccc; 
+        flex-direction: column;
+    }
+}

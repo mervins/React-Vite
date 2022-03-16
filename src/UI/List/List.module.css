@@ -1,0 +1,23 @@
+.list{
+    max-width: 90rem;
+    width: 90%;
+    margin: 1rem auto;
+    animation: list-upper 1s ease-in-out forwards;
+}
+
+.list ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes list-upper {
+    from{
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

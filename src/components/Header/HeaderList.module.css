@@ -1,0 +1,29 @@
+.nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav li{
+    margin: 0;
+    margin-left: 2rem;
+}
+
+/* .nav div{
+    cursor: pointer;
+    text-decoration: none;
+    color: #975beb;
+} */
+.nav a {
+    text-decoration: none;
+    color: #975beb;
+}
+
+.nav a:hover,
+.nav a:active,
+a.active{
+    color: #6200ee;
+    border-bottom: 2px solid #6200ee;
+}
